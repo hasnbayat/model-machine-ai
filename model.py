@@ -68,7 +68,6 @@ class RMSNorm(nn.Module):
     return x
 
 
-# Modelinizi güncelleyin
 class DilModeli(nn.Module):
     def __init__(self, vocab_size, embedding_dim, hidden_dim, num_layers=1, dropout_prob=0.5, num_heads=4):
         super(DilModeli, self).__init__()
