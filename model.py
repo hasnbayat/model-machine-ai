@@ -80,13 +80,13 @@ class DilModeli(nn.Module):
 
         # Feedforward Katmanı
         self.feedforward = nn.Sequential(
-            nn.Linear(hidden_dim * 2, 512),  # Örnek olarak 512 boyutunda bir gizli katman ekledik
+            nn.Linear(hidden_dim * 2, 512),  
             nn.ReLU(),
             nn.Dropout(dropout_prob)
         )
 
         # Normalize Katmanı
-        self.normalize = nn.LayerNorm(512)  # 512 boyutundaki gizli katmandan sonra bir LayerNorm ekledik
+        self.normalize = nn.LayerNorm(512)  
 
         self.fc = nn.Linear(512, vocab_size)
 
