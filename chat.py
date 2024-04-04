@@ -11,7 +11,7 @@ if loader.load_word_dict:
     X, y, kelime_sozluk, = loader.get_data()
 
 
-# Modeli oluştur
+
 vocab_size = len(kelime_sozluk)
 embedding_dim = 60
 hidden_dim = 128
@@ -116,7 +116,7 @@ seed_words = input("Machine-ai: ").split()
 
 
 
-# Her bir metni oluştur ve yazdır
+
 for i in range(1):
     generated_text = interact_with_model(model, kelime_sozluk, seed_words, max_length=100, temperature=0.2, top_k=50, top_p=0.9)
     words = generated_text.split()
