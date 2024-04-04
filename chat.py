@@ -3,7 +3,7 @@ import torch.nn.functional as F
 from model import DilModeli
 from data import DataLoader
 
-loader = DataLoader("tokenler_path","kelime_token_path")
+loader = DataLoader("/tokenler_path","/kelime_token_path")
 
 loader.load_word_dict()
 if loader.load_word_dict:
@@ -26,7 +26,7 @@ model = DilModeli(vocab_size, embedding_dim, hidden_dim, num_layers, dropout_pro
 # Modelin yüklenmesi
 try:
 
-  checkpoint = torch.load('/content/drive/MyDrive/Derin Ögrenme Eğitim Seti/RNN/RNN Data ile/dil_modeli_multihead_attention_checkpoint.pth')
+  checkpoint = torch.load('/dil_modeli_multihead_attention_checkpoint.pth')
 
   model.load_state_dict(checkpoint['model_state_dict'])
 except FileNotFoundError:
