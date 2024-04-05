@@ -26,8 +26,7 @@ Burada örnek olarak Layer Normalization kullanılmıştır.
 Sonuçları tahmin edilen kelime olasılıklarına dönüştürür.
 Modelin Eğitimi:
 Model, bir kelime sözlüğü ve ilgili parametrelerle oluşturulur.
-Daha önce eğitilmiş bir model varsa, dil_modeli_multihead_attention_checkpoint.pth dosyasından yüklenir.
-Model, eğitim için model.train() ile ayarlanır.
+
 
 Önemli Noktalar:
 Model, hem uzun vadeli bağımlılıkları yakalamak için LSTM'yi hem de giriş dizisi içindeki ilişkileri modellemek için dikkat mekanizmasını kullanır.
