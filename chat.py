@@ -111,7 +111,6 @@ def interact_with_model(model, kelime_sozluk, seed_words, max_length=100, temper
 
     return ' '.join(generated_text)
 
-# Kullanıcıdan başlangıç kelimelerini al
 seed_words = input("Machine-ai: ").split()
 
 
